@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "removedDuplicateRow": true,
+  "sidebarModulesAccessible": true,
+  "iconGreen": "#45AF2A",
+  "iconCross": "#FFFFFF",
+  "embeddedFavicon": true,
+  "widths": [
+    1440,
+    1024,
+    768,
+    390,
+    320
+  ],
+  "dataPackUnchanged": true,
+  "designGate": "GATE: OFF (no build active); 未宣称专用设计检查器通过"
+}

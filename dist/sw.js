@@ -1,5 +1,5 @@
 /* Versioned application shell only. Knowledge bodies live in IndexedDB, never duplicated here. */
-const SHELL='clinical-shell-da6b8dde8727f526';
+const SHELL='clinical-shell-10023511f5ac79cb';
 const ASSETS=['./','index.html','app.css','app.js','db.js','chunks.js','portable.js','search-core.js','search-worker.js','manifest.webmanifest','icons/icon.svg','icons/icon-192.png','icons/icon-512.png','data/manifest.json'];
 self.addEventListener('install',e=>e.waitUntil((async()=>{const c=await caches.open(SHELL);await c.addAll(ASSETS);await self.skipWaiting();})()));
 self.addEventListener('activate',e=>e.waitUntil((async()=>{for(const k of await caches.keys())if(k.startsWith('clinical-shell-')&&k!==SHELL)await caches.delete(k);await self.clients.claim();})()));
