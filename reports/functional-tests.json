@@ -1,0 +1,122 @@
+{
+  "started": "2026-11-11T12:27:41.679Z",
+  "tests": [
+    {
+      "name": "初次准备116条急救且默认锁定",
+      "status": "通过"
+    },
+    {
+      "name": "受锁模块及错误密码拦截",
+      "status": "通过"
+    },
+    {
+      "name": "导入中断不激活不完整版本，急救保持可用",
+      "status": "通过"
+    },
+    {
+      "name": "五模块全量导入计数",
+      "status": "通过",
+      "counts": {
+        "emergency": 116,
+        "orders": 2528,
+        "drugs": 534,
+        "templates": 4242,
+        "documents": 332
+      },
+      "elapsedMs": 1179
+    },
+    {
+      "name": "名称不含词的常见症状检索",
+      "status": "通过"
+    },
+    {
+      "name": "完整拼音和首字母检索",
+      "status": "通过"
+    },
+    {
+      "name": "药品主要功效独立字段检索",
+      "status": "通过"
+    },
+    {
+      "name": "药品适应病症独立字段检索",
+      "status": "通过"
+    },
+    {
+      "name": "药品空字段提示及公式缓存显示",
+      "status": "通过"
+    },
+    {
+      "name": "277个通用待核对病例可独立访问",
+      "status": "通过"
+    },
+    {
+      "name": "5个混合病例可独立访问",
+      "status": "通过"
+    },
+    {
+      "name": "门诊病例组合与分段阅读",
+      "status": "通过"
+    },
+    {
+      "name": "文书原分类顺序完整保留",
+      "status": "通过"
+    },
+    {
+      "name": "同名不同文书保留，原片段隔离显示且无源脚本",
+      "status": "通过"
+    },
+    {
+      "name": "文书复制成功或明确回退",
+      "status": "通过"
+    },
+    {
+      "name": "单篇打印文档保留原样式且不串篇",
+      "status": "通过"
+    },
+    {
+      "name": "锁定后全局检索不泄漏受锁药品",
+      "status": "通过"
+    },
+    {
+      "name": "断网刷新、重新解锁及跨模块离线搜索",
+      "status": "通过"
+    },
+    {
+      "name": "全量本机备份下载",
+      "status": "通过",
+      "bytes": 84721628
+    },
+    {
+      "name": "全量备份校验恢复后重新锁定",
+      "status": "通过"
+    },
+    {
+      "name": "新标签页离线重开且默认锁定",
+      "status": "通过"
+    },
+    {
+      "name": "1024、820、768、390、320视口无页面横向溢出（非真机证明）",
+      "status": "通过"
+    },
+    {
+      "name": "浏览器无未处理页面异常",
+      "status": "通过"
+    }
+  ],
+  "errors": [],
+  "environment": {
+    "browser": "157.0.8103.39",
+    "os": "win32",
+    "node": "v24.22.1",
+    "scope": "Windows 当前 Chrome 自动化；109及移动真机未验证",
+    "cpu": "AMD Ryzen 7 9800X3D 8-Core Processor           ",
+    "systemMemoryBytes": 16514379776
+  },
+  "metrics": {
+    "coldStartWithEmergencyImportMs": 632,
+    "warmStartMs": 526,
+    "offlineRefreshAndCrossModuleSearchMs": 727,
+    "mainThreadHeapBytes": 112444445
+  },
+  "finished": "2026-11-11T12:27:55.438Z"
+}

@@ -1,0 +1,95 @@
+{
+  "tests": [
+    {
+      "name": "断网直接双击文件启动，全部目录可用且未加载任何正文分块",
+      "status": "通过",
+      "elapsedMs": 128
+    },
+    {
+      "name": "主题色精确匹配图片 #45AF2A",
+      "status": "通过"
+    },
+    {
+      "name": "便携急救免密码搜索及按需正文读取",
+      "status": "通过"
+    },
+    {
+      "name": "便携版默认锁和错密码拦截",
+      "status": "通过"
+    },
+    {
+      "name": "便携症状、首字母及完整拼音检索",
+      "status": "通过"
+    },
+    {
+      "name": "便携药品主要功效、适应病症检索及完整详情",
+      "status": "通过"
+    },
+    {
+      "name": "277个未定及5个混合病例不遗漏",
+      "status": "通过"
+    },
+    {
+      "name": "门诊组合与单段文书选择",
+      "status": "通过"
+    },
+    {
+      "name": "便携原格式文书与同名不同内容保留，源工具不执行",
+      "status": "通过"
+    },
+    {
+      "name": "本地文件复制成功或明确文本回退",
+      "status": "通过"
+    },
+    {
+      "name": "本地文件生成单篇原格式打印文档",
+      "status": "通过"
+    },
+    {
+      "name": "锁定后搜索不泄漏受锁药品",
+      "status": "通过"
+    },
+    {
+      "name": "显式全文搜索按块扫描正文且结果可用",
+      "status": "通过",
+      "elapsedMs": 688
+    },
+    {
+      "name": "正文缓存上限为两个分块",
+      "status": "通过",
+      "cachedChunks": 2,
+      "loads": 28,
+      "cacheHits": 1,
+      "peakCachedChunks": 2
+    },
+    {
+      "name": "本地文件刷新不丢资料且重新锁定",
+      "status": "通过"
+    },
+    {
+      "name": "五种桌面手机宽度无主页面横向溢出",
+      "status": "通过"
+    },
+    {
+      "name": "整个断网文件模式测试未发送HTTP或HTTPS请求",
+      "status": "通过"
+    },
+    {
+      "name": "便携模式无未处理页面异常",
+      "status": "通过"
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "startupMs": 128,
+    "symptomSearchMs": 65,
+    "ordersFullSearchMs": 688,
+    "heapBytes": 56800000,
+    "httpRequests": 0
+  },
+  "environment": {
+    "browser": "157.0.8103.39",
+    "cpu": "AMD Ryzen 7 9800X3D 8-Core Processor           ",
+    "os": "win32"
+  }
+}

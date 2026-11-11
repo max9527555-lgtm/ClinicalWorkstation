@@ -1,0 +1,39 @@
+name: 发布临床工作站
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: clinical-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 读取已核验源码与完整资料
+        uses: actions/checkout@v4
+      - name: 检查浏览器脚本语法
+        run: |
+          node --check dist/app.js
+          node --check dist/db.js
+          node --check dist/portable.js
+          node --check dist/chunks.js
+          node --check dist/search-core.js
+          node --check dist/search-worker.js
+          node --check dist/sw.js
+      - name: 读取 Pages 配置
+        uses: actions/configure-pages@v5
+      - name: 上传完整静态站点
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: 发布 Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

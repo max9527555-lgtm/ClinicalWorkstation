@@ -1,0 +1,7 @@
+tools/vendor/
+**/__pycache__/
+.taste-skill/chrome*/
+shots/
+reports/test-downloads/
+.taste-skill/
+node_modules/

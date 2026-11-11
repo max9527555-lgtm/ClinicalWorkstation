@@ -1,0 +1,17 @@
+{
+  "status": "通过",
+  "description": "独立从原压缩包逐记录核对全部派生原文、来源指纹、分块指纹和唯一键；原包指纹未变。",
+  "counts": {
+    "emergency": 116,
+    "orders": 2528,
+    "drugs": 534,
+    "templates": 4242,
+    "documents": 332
+  },
+  "recordCount": 7752,
+  "documentFragments": 332,
+  "sourceArchiveHashes": {
+    "数据源.zip": "0559a476346ece8f624aa4874943c6a64c6ec706064cbf3cbf2b2142f0b018d9",
+    "医疗文书.zip": "59344eef06bd3884a2ed070b349010ebfde665f5aad3435d0726308616a85785"
+  }
+}

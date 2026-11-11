@@ -1,0 +1,11 @@
+{
+  "color": "#45AF2A",
+  "records": 7752,
+  "startupIndexBytes": 1416309,
+  "uncompressedIndexBytes": 6657494,
+  "dataChunks": 131,
+  "dataBytes": 84675297,
+  "originalJSONBodiesPreserved": true,
+  "externalRuntimeRequired": false,
+  "browserRequired": true
+}

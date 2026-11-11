@@ -1,0 +1,19 @@
+{
+  "name": "clinical-desk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "离线临床资料工作站",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check dist/app.js && node --check dist/db.js && node --check dist/search-worker.js && node --check dist/sw.js",
+    "test": "node tools/functional.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  },
+  "packageManager": "pnpm@11.25.0"
+}
