@@ -7,6 +7,7 @@ const done=t=>new Promise((ok,no)=>{t.oncomplete=()=>ok();t.onabort=()=>no(t.err
 let dbPromise;
 function open(){if(!dbPromise)dbPromise=new Promise((ok,no)=>{const r=indexedDB.open(DB,SCHEMA);r.onupgradeneeded=()=>{const d=r.result;['records','headers'].forEach(n=>{const s=d.createObjectStore(n,{keyPath:'key'});s.createIndex('moduleKey','moduleKey');});d.createObjectStore('meta',{keyPath:'key'});};r.onblocked=()=>no(Error('旧页面正在使用资料库，请关闭其他工作站标签页后重试。'));r.onerror=()=>{dbPromise=null;no(r.error);};r.onsuccess=()=>{const d=r.result;d.onversionchange=()=>{d.close();dbPromise=null;};ok(d);};});return dbPromise;}
 async function get(store,key){const d=await open();return req(d.transaction(store).objectStore(store).get(key));}
+async function getMany(store,keys){const d=await open(),t=d.transaction(store),p=done(t),s=t.objectStore(store),rows=new Array(keys.length);keys.forEach((key,i)=>{const q=s.get(key);q.onsuccess=()=>rows[i]=q.result;});await p;return rows;}
 async function meta(key){const x=await get('meta',key);return x&&x.value;}
 async function setMeta(key,value){const d=await open(),t=d.transaction('meta','readwrite'),p=done(t);t.objectStore('meta').put({key,value});await p;}
 function head(r){const h={};['key','id','module','moduleKey','version','title','category','setting','caseName','templateNames','flags','missingDetails','flow','emptyTemplates','duplicateIds','quickFields','pinyin','initials'].forEach(k=>{if(r[k]!==undefined)h[k]=r[k];});return h;}
@@ -24,6 +25,6 @@ if(r.module==='templates'){f.push(['病例名称',r.caseName,60]);Object.keys(r.
 if(r.module==='emergency')f.push(['急救正文',r.raw.lines.join('\n'),30]);
 if(r.module==='documents')f.push(['文书正文',r.raw.text,20]);
 return f;}
-g.K={open,get,meta,setMeta,done,req,putChunk,head,allHeads,count,hash,norm,flat,labels,fields,DB,SCHEMA};
+g.K={open,get,getMany,meta,setMeta,done,req,putChunk,head,allHeads,count,hash,norm,flat,labels,fields,DB,SCHEMA};
 })(typeof self!=='undefined'?self:window);
 

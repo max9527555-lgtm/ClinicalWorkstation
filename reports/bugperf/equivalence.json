@@ -1,0 +1,238 @@
+{
+  "passed": true,
+  "comparisons": 32,
+  "tests": [
+    {
+      "module": "orders",
+      "query": "",
+      "scope": "focused",
+      "page": 0,
+      "total": 2528
+    },
+    {
+      "module": "orders",
+      "query": "",
+      "scope": "focused",
+      "page": 1,
+      "total": 2528
+    },
+    {
+      "module": "orders",
+      "query": "鼻塞流涕",
+      "scope": "focused",
+      "page": 0,
+      "total": 9
+    },
+    {
+      "module": "orders",
+      "query": "鼻塞流涕",
+      "scope": "focused",
+      "page": 1,
+      "total": 9
+    },
+    {
+      "module": "orders",
+      "query": "jxshxdgr",
+      "scope": "focused",
+      "page": 0,
+      "total": 2
+    },
+    {
+      "module": "orders",
+      "query": "jxshxdgr",
+      "scope": "focused",
+      "page": 1,
+      "total": 2
+    },
+    {
+      "module": "orders",
+      "query": "jixingshanghuxidaoganran",
+      "scope": "focused",
+      "page": 0,
+      "total": 2
+    },
+    {
+      "module": "orders",
+      "query": "jixingshanghuxidaoganran",
+      "scope": "focused",
+      "page": 1,
+      "total": 2
+    },
+    {
+      "module": "orders",
+      "query": "治疗",
+      "scope": "full",
+      "page": 0,
+      "total": 2039
+    },
+    {
+      "module": "orders",
+      "query": "治疗",
+      "scope": "full",
+      "page": 1,
+      "total": 2039
+    },
+    {
+      "module": "drugs",
+      "query": "滋阴补肾",
+      "scope": "focused",
+      "page": 0,
+      "total": 3
+    },
+    {
+      "module": "drugs",
+      "query": "滋阴补肾",
+      "scope": "focused",
+      "page": 1,
+      "total": 3
+    },
+    {
+      "module": "drugs",
+      "query": "肾阴亏损",
+      "scope": "focused",
+      "page": 0,
+      "total": 3
+    },
+    {
+      "module": "drugs",
+      "query": "肾阴亏损",
+      "scope": "focused",
+      "page": 1,
+      "total": 3
+    },
+    {
+      "module": "drugs",
+      "query": "不良反应",
+      "scope": "full",
+      "page": 0,
+      "total": 219
+    },
+    {
+      "module": "drugs",
+      "query": "不良反应",
+      "scope": "full",
+      "page": 1,
+      "total": 219
+    },
+    {
+      "module": "templates",
+      "query": "",
+      "scope": "focused",
+      "setting": "shared",
+      "page": 0,
+      "total": 277
+    },
+    {
+      "module": "templates",
+      "query": "",
+      "scope": "focused",
+      "setting": "shared",
+      "page": 1,
+      "total": 277
+    },
+    {
+      "module": "templates",
+      "query": "",
+      "scope": "focused",
+      "setting": "mixed",
+      "page": 0,
+      "total": 5
+    },
+    {
+      "module": "templates",
+      "query": "",
+      "scope": "focused",
+      "setting": "mixed",
+      "page": 1,
+      "total": 5
+    },
+    {
+      "module": "templates",
+      "query": "发热",
+      "scope": "full",
+      "page": 0,
+      "total": 2957
+    },
+    {
+      "module": "templates",
+      "query": "发热",
+      "scope": "full",
+      "page": 1,
+      "total": 2957
+    },
+    {
+      "module": "documents",
+      "query": "术前小结",
+      "scope": "focused",
+      "page": 0,
+      "total": 2
+    },
+    {
+      "module": "documents",
+      "query": "术前小结",
+      "scope": "focused",
+      "page": 1,
+      "total": 2
+    },
+    {
+      "module": "documents",
+      "query": "术前",
+      "scope": "full",
+      "page": 0,
+      "total": 73
+    },
+    {
+      "module": "documents",
+      "query": "术前",
+      "scope": "full",
+      "page": 1,
+      "total": 73
+    },
+    {
+      "module": "emergency",
+      "query": "心肺复苏",
+      "scope": "full",
+      "page": 0,
+      "total": 9
+    },
+    {
+      "module": "emergency",
+      "query": "心肺复苏",
+      "scope": "full",
+      "page": 1,
+      "total": 9
+    },
+    {
+      "module": "all",
+      "query": "发热",
+      "scope": "focused",
+      "page": 0,
+      "total": 570
+    },
+    {
+      "module": "all",
+      "query": "发热",
+      "scope": "focused",
+      "page": 1,
+      "total": 570
+    },
+    {
+      "module": "templates",
+      "query": "",
+      "scope": "focused",
+      "setting": "out",
+      "page": 0,
+      "total": 2266
+    },
+    {
+      "module": "templates",
+      "query": "",
+      "scope": "focused",
+      "setting": "out",
+      "page": 1,
+      "total": 2266
+    }
+  ],
+  "paginationScans": 1,
+  "cancelledSearchReturnsNull": true
+}

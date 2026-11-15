@@ -3,7 +3,7 @@
     {
       "name": "断网直接双击文件启动，全部目录可用且未加载任何正文分块",
       "status": "通过",
-      "elapsedMs": 128
+      "elapsedMs": 122
     },
     {
       "name": "主题色精确匹配图片 #45AF2A",
@@ -52,14 +52,14 @@
     {
       "name": "显式全文搜索按块扫描正文且结果可用",
       "status": "通过",
-      "elapsedMs": 688
+      "elapsedMs": 179
     },
     {
       "name": "正文缓存上限为两个分块",
       "status": "通过",
       "cachedChunks": 2,
       "loads": 28,
-      "cacheHits": 1,
+      "cacheHits": 0,
       "peakCachedChunks": 2
     },
     {
@@ -81,14 +81,14 @@
   ],
   "errors": [],
   "metrics": {
-    "startupMs": 128,
-    "symptomSearchMs": 65,
-    "ordersFullSearchMs": 688,
-    "heapBytes": 56800000,
+    "startupMs": 122,
+    "symptomSearchMs": 15,
+    "ordersFullSearchMs": 179,
+    "heapBytes": 72200000,
     "httpRequests": 0
   },
   "environment": {
-    "browser": "157.0.8103.39",
+    "browser": "157.0.8103.51",
     "cpu": "AMD Ryzen 7 9800X3D 8-Core Processor           ",
     "os": "win32"
   }

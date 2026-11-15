@@ -1,0 +1,31 @@
+{
+  "phase": "after",
+  "issues": [
+    {
+      "name": "并发读取同一正文仅执行一次",
+      "passed": true,
+      "loads": 1
+    },
+    {
+      "name": "快速打开资料保留最后一次选择",
+      "passed": true
+    },
+    {
+      "name": "输入后立即搜索只执行一次",
+      "passed": true,
+      "calls": 1
+    },
+    {
+      "name": "全文翻页不重新扫描正文",
+      "passed": true,
+      "reads": 0
+    }
+  ],
+  "metrics": {
+    "importMs": 272,
+    "firstFullMs": 177,
+    "nextPageMs": 40,
+    "nextPageBodyReads": 0
+  },
+  "errors": []
+}

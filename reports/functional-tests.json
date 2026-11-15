@@ -1,5 +1,5 @@
 {
-  "started": "2026-11-11T12:27:41.679Z",
+  "started": "2026-11-15T12:53:28.346Z",
   "tests": [
     {
       "name": "初次准备116条急救且默认锁定",
@@ -23,7 +23,7 @@
         "templates": 4242,
         "documents": 332
       },
-      "elapsedMs": 1179
+      "elapsedMs": 1201
     },
     {
       "name": "名称不含词的常见症状检索",
@@ -105,7 +105,7 @@
   ],
   "errors": [],
   "environment": {
-    "browser": "157.0.8103.39",
+    "browser": "157.0.8103.51",
     "os": "win32",
     "node": "v24.22.1",
     "scope": "Windows 当前 Chrome 自动化；109及移动真机未验证",
@@ -113,10 +113,10 @@
     "systemMemoryBytes": 16514379776
   },
   "metrics": {
-    "coldStartWithEmergencyImportMs": 632,
-    "warmStartMs": 526,
-    "offlineRefreshAndCrossModuleSearchMs": 727,
-    "mainThreadHeapBytes": 112444445
+    "coldStartWithEmergencyImportMs": 641,
+    "warmStartMs": 532,
+    "offlineRefreshAndCrossModuleSearchMs": 723,
+    "mainThreadHeapBytes": 111994855
   },
-  "finished": "2026-11-11T12:27:55.438Z"
+  "finished": "2026-11-15T12:53:41.647Z"
 }
