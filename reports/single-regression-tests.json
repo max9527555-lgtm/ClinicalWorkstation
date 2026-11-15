@@ -3,7 +3,7 @@
     {
       "name": "断网直接双击文件启动，全部目录可用且未加载任何正文分块",
       "status": "通过",
-      "elapsedMs": 336
+      "elapsedMs": 342
     },
     {
       "name": "主题色精确匹配图片 #45AF2A",
@@ -52,7 +52,7 @@
     {
       "name": "显式全文搜索按块扫描正文且结果可用",
       "status": "通过",
-      "elapsedMs": 163
+      "elapsedMs": 164
     },
     {
       "name": "正文缓存上限为两个分块",
@@ -81,9 +81,9 @@
   ],
   "errors": [],
   "metrics": {
-    "startupMs": 336,
-    "symptomSearchMs": 14,
-    "ordersFullSearchMs": 163,
+    "startupMs": 342,
+    "symptomSearchMs": 16,
+    "ordersFullSearchMs": 164,
     "heapBytes": 60300000,
     "httpRequests": 0
   },

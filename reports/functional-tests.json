@@ -1,5 +1,5 @@
 {
-  "started": "2026-11-15T12:53:28.346Z",
+  "started": "2026-11-15T12:59:22.915Z",
   "tests": [
     {
       "name": "初次准备116条急救且默认锁定",
@@ -23,7 +23,7 @@
         "templates": 4242,
         "documents": 332
       },
-      "elapsedMs": 1201
+      "elapsedMs": 1239
     },
     {
       "name": "名称不含词的常见症状检索",
@@ -113,10 +113,10 @@
     "systemMemoryBytes": 16514379776
   },
   "metrics": {
-    "coldStartWithEmergencyImportMs": 641,
-    "warmStartMs": 532,
-    "offlineRefreshAndCrossModuleSearchMs": 723,
-    "mainThreadHeapBytes": 111994855
+    "coldStartWithEmergencyImportMs": 668,
+    "warmStartMs": 540,
+    "offlineRefreshAndCrossModuleSearchMs": 738,
+    "mainThreadHeapBytes": 112454704
   },
-  "finished": "2026-11-15T12:53:41.647Z"
+  "finished": "2026-11-15T12:59:36.300Z"
 }
